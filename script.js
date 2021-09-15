@@ -22,6 +22,9 @@ let weather = {
     },
     search: function () {
         this.fetchWeather(document.querySelector(".searchBar").value)
+        if (document.querySelector(".searchBar").value) {
+            document.querySelector(".searchBar").value="";
+        }
     }
 };
 
